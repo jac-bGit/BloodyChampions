@@ -11,8 +11,8 @@ public:
 	virtual void update() {};
 	virtual void render() {};
 
-	int stateID;
-	int nextState;
+	//int stateID;
+	//int nextState;
 
 	//obnoveni levelu
 	bool refresh = true;

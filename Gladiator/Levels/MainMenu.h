@@ -42,7 +42,7 @@ public:
 		btn_quit = new Button(150, 350, "Quit");
 		backToMenu = new Button(50, 400, "Back");
 
-		madeBy = new Text("Assets/fonts/TheanoDidot-Regular.ttf", 20, "Made by: J. Werner", { 0,0,0 });
+		madeBy = new Text("Assets/fonts/TheanoDidot-Regular.ttf", 20, "Made by: Me", { 0,0,0 });
 
 		//controlls
 		/*for (int i = 0; i < sizeof(controllsTxt); i++) {
@@ -117,8 +117,8 @@ public:
 			if (toControlls->clicked())
 				menuState = 1;
 
-			/*if (btn_quit->clicked())
-				Game::clean();*/
+			if (btn_quit->clicked())
+				Game::endGame();
 			break;
 		case 1:
 			if (backToMenu->clicked())
@@ -126,6 +126,4 @@ public:
 			break;
 		}
 	}
-
-
 };

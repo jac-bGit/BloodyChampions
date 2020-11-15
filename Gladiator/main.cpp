@@ -3,7 +3,7 @@
 
 #include "Game.h"
 
-Game* game = nullptr;
+static Game* game = nullptr;
 
 int main(int argc, char * argv[]) {
 

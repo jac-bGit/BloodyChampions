@@ -49,7 +49,7 @@ void Game::init(const char * title, int xpos, int ypos, int w, int h) {
 	SDL_Init(SDL_INIT_EVERYTHING);
 	TTF_Init();
 
-	window = SDL_CreateWindow(title, SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, w, h, 0);
+	window = SDL_CreateWindow(title, SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, w, h, SDL_WINDOW_FULLSCREEN);
 	//int full = SDL_SetWindowFullscreen(window, 0);
 
 	renderer = SDL_CreateRenderer(window, -1, 0);
@@ -182,6 +182,8 @@ void Game::clean() {
 	TTF_Quit();
 	SDL_Quit();
 }
+
+void Game::endGame() { myEvent.type = SDL_EventType::SDL_QUIT; }
 
 //omezeni fps
 void Game::framerate(Uint32 tick) {

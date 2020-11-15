@@ -1,5 +1,6 @@
 #pragma once
 #include <iostream>
+#include <vector>
 #include "SDL.h"
 
 class GameObject;
@@ -11,6 +12,7 @@ public:
 	static SDL_Renderer* renderer; //renderer slouzi pro vykreslovani objektu
 	static SDL_Event myEvent; //vstupy od uzivatele do programu 
 	static bool mouseClicked;
+
 	static int arenaLevel;
 	static char* Game::GAME_TITLE;
 
@@ -35,9 +37,11 @@ public:
 
 	//levely
 	static int gamestate;
+	//vector<GameState> 
 
 	//ukonceni
 	void clean();
+	static void endGame();
 
 private:
 	bool isRunnig;

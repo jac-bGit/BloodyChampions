@@ -127,8 +127,11 @@
     <ClCompile Include="GameObjects\Fighter.cpp" />
     <ClCompile Include="GameObjects\Player.cpp" />
     <ClCompile Include="GameObjects\StateBars.cpp" />
+    <ClCompile Include="Levels\Level.cpp" />
     <ClCompile Include="Levels\Arena1.cpp" />
+    <ClCompile Include="Levels\GameState.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Menu.cpp" />
     <ClCompile Include="Text.cpp" />
     <ClCompile Include="TextureManager.cpp" />
   </ItemGroup>
@@ -141,6 +144,7 @@
     <ClInclude Include="GameObjects\Fighter.h" />
     <ClInclude Include="GameObjects\Player.h" />
     <ClInclude Include="GameObjects\StateBars.h" />
+    <ClInclude Include="Levels\Level.h" />
     <ClInclude Include="Levels\Arena1.h" />
     <ClInclude Include="Levels\Arena2.h" />
     <ClInclude Include="Levels\Arena3.h" />
@@ -153,6 +157,7 @@
     <ClInclude Include="Levels\GameState.h" />
     <ClInclude Include="Levels\MainMenu.h" />
     <ClInclude Include="Levels\WinLevel.h" />
+    <ClInclude Include="Menu.h" />
     <ClInclude Include="Text.h" />
     <ClInclude Include="TextureManager.h" />
   </ItemGroup>
